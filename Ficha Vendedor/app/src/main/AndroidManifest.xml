@@ -9,11 +9,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LOGIN"
+        android:theme="@style/Theme.FichaDeVendedor"
         tools:targetApi="31">
-        <activity
-            android:name=".ResultActivity"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

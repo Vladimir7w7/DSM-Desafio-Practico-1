@@ -15,10 +15,30 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BIENVENIDO VLADIMIR"
-            android:textSize="20sp"
             android:layout_marginLeft="80dp"
-            android:layout_marginTop="40dp"/>
+            android:layout_marginTop="40dp"
+            android:text="BIENVENIDO VLADIMIR"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnventas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ventas"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/rounded_botton"/>
+
+        <Button
+            android:id="@+id/btnecua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/rounded_botton"
+            android:text="@string/ecuacion" />
 
 
     </LinearLayout>

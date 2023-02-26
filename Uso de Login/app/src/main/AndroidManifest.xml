@@ -12,6 +12,15 @@
         android:theme="@style/Theme.LOGIN"
         tools:targetApi="31">
         <activity
+            android:name=".FormulaCuadratica"
+            android:exported="false" />
+        <activity
+            android:name=".ResultadoVendedor"
+            android:exported="false" />
+        <activity
+            android:name=".FichaVendedor"
+            android:exported="false" />
+        <activity
             android:name=".ResultActivity"
             android:exported="false" />
         <activity

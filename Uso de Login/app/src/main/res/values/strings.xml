@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LOGIN</string>
+    <string name="ventas">FICHA DE VENDEDOR</string>
+    <string name="ecuacion">ECUACION CUADRATICA</string>
+    <string name="valora">Valor de "a"</string>
+    <string name="valorb">Valor de "b"</string>
+    <string name="valorc">Valor de "c"</string>
+    <string name="btnsumar">Calcular</string>
 </resources>

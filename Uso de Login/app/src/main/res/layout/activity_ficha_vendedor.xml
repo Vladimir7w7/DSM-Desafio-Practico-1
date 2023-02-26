@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FichaVendedor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FICHA DE VENDEDOR"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+
+        />
+    <TextView
+        android:id="@+id/txtnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_margin="15dp" />
+
+
+    <EditText
+        android:id="@+id/edinombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre completo"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtcodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Codigo empleado:"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        />
+
+    <EditText
+        android:id="@+id/editcodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Codigo empleado"
+        android:textSize="20dp"
+        android:layout_margin="15dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp">
+
+        <TextView
+            android:id="@+id/txtventas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Total de ventas:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editventa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Venta "
+            android:inputType="number"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="78dp">
+
+        <TextView
+            android:id="@+id/txtfecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Fecha de venta:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="selecciona la fecha"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/txtresult"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        />
+
+
+</LinearLayout>

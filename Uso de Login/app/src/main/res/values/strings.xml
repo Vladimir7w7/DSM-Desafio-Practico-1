@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">Desafio Practico #1</string>
     <string name="ventas">FICHA DE VENDEDOR</string>
     <string name="ecuacion">ECUACION CUADRATICA</string>
     <string name="valora">Valor de "a"</string>

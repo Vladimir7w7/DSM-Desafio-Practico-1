@@ -18,7 +18,7 @@ class FichaVendedor : AppCompatActivity() {
         val botoncalcular: Button = findViewById(R.id.btncalcular)
 
 
-        botoncalcular.setOnClickListener { realizarcalculo() }
+        botoncalcular.setOnClickListener { calculo() }
 
 
         val tv = findViewById<TextView>(R.id.etdate)
@@ -41,16 +41,16 @@ class FichaVendedor : AppCompatActivity() {
         }
     }
 
-    private fun realizarcalculo() {
+    private fun calculo() {
 
-        //capturando el nombre
+        //capturando el nombre, codigo y total de ventas
 
         val camponombre: EditText = findViewById(R.id.edinombre)
         val campocod: EditText = findViewById(R.id.editcodigo)
         val campoventa: EditText = findViewById(R.id.editventa)
 
 
-        //val mensajeresult: TextView = findViewById(R.id.txtresult)
+
 
 
         val nombre: String = camponombre.text.toString()
@@ -59,7 +59,7 @@ class FichaVendedor : AppCompatActivity() {
         val ventas1: String = campoventa.text.toString()
 
 
-        var result = ""
+        var result = "0"
 
         if (ventas >= 500 && ventas <= 1000) {
             var comi = 0.1
@@ -80,7 +80,7 @@ class FichaVendedor : AppCompatActivity() {
             val total: Double = (ventas * 0.30)
             result = "$total"
         }
-        //---------abre activity---------------------------------------------
+        //---------abre activity y envia datos almacenados---------------------------------------------
 
 
         val intento1 = Intent(this, ResultadoVendedor::class.java)
@@ -88,13 +88,10 @@ class FichaVendedor : AppCompatActivity() {
         intento1.putExtra("res1", cod)
         intento1.putExtra("res2", ventas1)
         intento1.putExtra("res3", result)
-
-
         startActivity(intento1)
 
         //------------------------------------------------------
         Toast.makeText(this, "CALCULADO", Toast.LENGTH_LONG).show()
-        //mensajeresult.text="Hola $nombre su codigo de usuario es: $cod usted genero una venta mensual de: $ventas y su comision es de: $result"
 
     }
 }

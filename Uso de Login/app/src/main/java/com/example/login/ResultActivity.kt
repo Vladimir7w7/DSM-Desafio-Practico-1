@@ -9,15 +9,19 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
-        val btnvendedor = findViewById<Button>(R.id.btnventas)
         val btnecua = findViewById<Button>(R.id.btnecua)
+
+        btnecua.setOnClickListener {
+            val intento1 = Intent(this, FormulaCuadratica::class.java)
+            startActivity(intento1)
+        }
+        val btnvendedor = findViewById<Button>(R.id.btnventas)
         btnvendedor.setOnClickListener {
             val intento1 = Intent(this, FichaVendedor::class.java)
             startActivity(intento1)
-            btnecua.setOnClickListener{
-                val intento2 = Intent(this,FormulaCuadratica::class.java)
-                startActivity(intento2)
+
+            
+
             }
         }
     }
-}

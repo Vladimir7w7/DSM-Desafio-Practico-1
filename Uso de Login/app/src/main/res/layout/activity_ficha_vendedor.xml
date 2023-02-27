@@ -4,56 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#90009688"
+    android:backgroundTintMode="multiply"
     android:orientation="vertical"
     tools:context=".FichaVendedor">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FICHA DE VENDEDOR"
-        android:gravity="center"
-        android:textSize="20dp"
         android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="FICHA DE VENDEDOR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
 
-        />
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/imagen" />
+
     <TextView
         android:id="@+id/txtnombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre:"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:textSize="20dp"
-        android:layout_margin="15dp" />
+        android:text="Nombre:"
+        android:textSize="20dp" />
 
 
     <EditText
         android:id="@+id/edinombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre completo"
-        android:textSize="20dp"
         android:layout_margin="15dp"
-        />
-
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/nombre"
+        android:textSize="20dp" />
 
 
     <TextView
         android:id="@+id/txtcodigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Codigo empleado:"
-        android:gravity="center"
-        android:textSize="20dp"
         android:layout_margin="15dp"
-        />
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Codigo empleado:"
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/editcodigo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Codigo empleado"
-        android:textSize="20dp"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/codigo"
+        android:textSize="20dp" />
 
 
     <LinearLayout
@@ -65,6 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:fontFamily="sans-serif-condensed"
             android:gravity="center"
             android:text="Total de ventas:"
             android:textSize="20dp" />
@@ -74,7 +85,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:hint="Venta "
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/venta"
             android:inputType="number"
             android:textSize="20dp" />
 
@@ -82,7 +94,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="78dp">
 
         <TextView
@@ -90,6 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:fontFamily="sans-serif-condensed"
             android:gravity="center"
             android:text="Fecha de venta:"
             android:textSize="20dp" />
@@ -98,25 +111,24 @@
             android:id="@+id/etdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:ems="10"
-            android:hint="selecciona la fecha"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/fecha"
             android:inputType="date" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btncalcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calcular"
-        android:layout_gravity="center" />
 
-    <TextView
-        android:id="@+id/txtresult"
-        android:layout_width="250dp"
-        android:layout_height="85dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="15dp"
-        />
+        android:backgroundTint="#FF9800"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Calcular"
+
+        app:cornerRadius="20dp" />
 
 
 </LinearLayout>

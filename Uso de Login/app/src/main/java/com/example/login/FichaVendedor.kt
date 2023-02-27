@@ -50,7 +50,7 @@ class FichaVendedor : AppCompatActivity() {
         val campoventa: EditText = findViewById(R.id.editventa)
 
 
-        val mensajeresult: TextView = findViewById(R.id.txtresult)
+        //val mensajeresult: TextView = findViewById(R.id.txtresult)
 
 
         val nombre: String = camponombre.text.toString()

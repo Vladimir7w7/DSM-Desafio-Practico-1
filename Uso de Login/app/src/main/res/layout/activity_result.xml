@@ -18,8 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="40dp"
-            android:text="BIENVENIDO VLADIMIR"
-            android:textSize="20sp" />
+            android:text="BIENVENIDO!"
+            android:textSize="40sp" />
 
         <Button
             android:id="@+id/btnventas"
